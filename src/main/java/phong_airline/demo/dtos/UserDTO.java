@@ -35,12 +35,9 @@ public class UserDTO {
 
     private String providerId;
 
-  
     private List<Role> roles;
 
     private boolean active;
-    
-    private List<Booking> bookings;
 
     private LocalDateTime createdAt;
 
