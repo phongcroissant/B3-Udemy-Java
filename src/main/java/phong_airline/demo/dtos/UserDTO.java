@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import phong_airline.demo.enums.AuthMethod;
-import phong_airline.demo.entities.Booking;
 import phong_airline.demo.entities.Role;
 
 @Data

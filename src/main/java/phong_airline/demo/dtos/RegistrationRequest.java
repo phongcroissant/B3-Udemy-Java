@@ -1,5 +1,13 @@
 package phong_airline.demo.dtos;
 
+
+import java.util.List;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
 @Data
 public class RegistrationRequest {
 
@@ -10,6 +18,8 @@ public class RegistrationRequest {
     @Email(message="Invalid Email Format")
     private String email;
 
+    @NotBlank(message="Password is required")
+    @Size(min=3,message="Password must be at least 3 characters long")
     private String password;
 
     private String phoneNumber;

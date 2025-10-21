@@ -1,11 +1,9 @@
 package phong_airline.demo.entities;
 
-import java.security.AuthProvider;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,7 +22,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import phong_airline.demo.enums.AuthMethod;
-import phong_airline.demo.enums.BookingStatus;
 
 @Entity
 @Data

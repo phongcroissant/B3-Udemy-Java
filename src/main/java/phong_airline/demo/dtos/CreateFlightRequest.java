@@ -2,6 +2,18 @@ package phong_airline.demo.dtos;
 
 import java.math.BigDecimal;
 
+
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import phong_airline.demo.enums.FlightStatus;
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -20,11 +32,12 @@ public class CreateFlightRequest {
 
     @NotBlank(message="Arrival airport IATA code cannot be blank")
     private String arrivalAirportIataCode;
+     
     @NotNull(message="Departure time cannot be null")
-    private LocalDataTime departureTime;
+    private LocalDateTime departureTime;
 
     @NotNull(message="Arrival time cannot be null")
-    private LocalDataTime arrivalTime;
+    private LocalDateTime arrivalTime;
 
     @NotNull(message="Base price cannot be null")
     @Positive(message="Base price must be positive")

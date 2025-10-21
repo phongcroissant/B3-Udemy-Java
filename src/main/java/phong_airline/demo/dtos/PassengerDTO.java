@@ -1,5 +1,12 @@
 package phong_airline.demo.dtos;
 
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import phong_airline.demo.enums.PassengerType;
+
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

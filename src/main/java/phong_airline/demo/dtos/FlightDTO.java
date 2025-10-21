@@ -1,6 +1,16 @@
 package phong_airline.demo.dtos;
 
 import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import phong_airline.demo.enums.FlightStatus;
+import java.math.BigDecimal;
+import phong_airline.demo.entities.User;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Data
 @AllArgsConstructor
