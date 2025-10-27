@@ -37,7 +37,7 @@ public class EmailNotification {
 
     @ManyToOne
     @JoinColumn(name="booking_id")
-    private Booking bokking;
+    private Booking booking;
 
     private LocalDateTime sentAt;
 

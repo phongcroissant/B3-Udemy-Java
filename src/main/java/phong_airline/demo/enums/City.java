@@ -1,5 +1,8 @@
 package phong_airline.demo.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum City {
     PARIS(Country.FRANCE),
     NEW_YORK(Country.USA),
@@ -16,4 +19,6 @@ public enum City {
     City (Country country) {
         this.country = country;
     }
+
+    
 }

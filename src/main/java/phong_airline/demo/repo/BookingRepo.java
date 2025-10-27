@@ -8,6 +8,6 @@ import phong_airline.demo.entities.Booking;
 
 public interface BookingRepo extends JpaRepository<Booking, Long>{
 
-    List<Booking> findByYserIdOrderByIdDesc(Long userId);
+    List<Booking> findByUserIdOrderByIdDesc(Long userId);
     
 }
