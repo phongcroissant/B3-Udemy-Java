@@ -1,14 +1,13 @@
-package com.phegon.PhegonAirline.controller;
+package phong_airline.demo.controller;
 
-
-import com.phegon.PhegonAirline.dtos.AirportDTO;
-import com.phegon.PhegonAirline.dtos.BookingDTO;
-import com.phegon.PhegonAirline.dtos.CreateBookingRequest;
-import com.phegon.PhegonAirline.dtos.Response;
-import com.phegon.PhegonAirline.enums.BookingStatus;
-import com.phegon.PhegonAirline.services.BookingService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import phong_airline.demo.dtos.BookingDTO;
+import phong_airline.demo.dtos.CreateBookingRequest;
+import phong_airline.demo.dtos.Response;
+import phong_airline.demo.enums.BookingStatus;
+import phong_airline.demo.services.BookingService;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

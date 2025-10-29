@@ -1,11 +1,11 @@
-package com.phegon.PhegonAirline.controller;
+package phong_airline.demo.controller;
 
-
-import com.phegon.PhegonAirline.dtos.Response;
-import com.phegon.PhegonAirline.dtos.RoleDTO;
-import com.phegon.PhegonAirline.services.RoleService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import phong_airline.demo.dtos.Response;
+import phong_airline.demo.dtos.RoleDTO;
+import phong_airline.demo.services.RoleService;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

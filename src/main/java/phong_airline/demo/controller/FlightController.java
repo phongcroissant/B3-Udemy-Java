@@ -1,14 +1,15 @@
-package com.phegon.PhegonAirline.controller;
+package phong_airline.demo.controller;
 
-
-import com.phegon.PhegonAirline.dtos.*;
-import com.phegon.PhegonAirline.entities.Flight;
-import com.phegon.PhegonAirline.enums.City;
-import com.phegon.PhegonAirline.enums.Country;
-import com.phegon.PhegonAirline.enums.FlightStatus;
-import com.phegon.PhegonAirline.services.FlightService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import phong_airline.demo.dtos.CreateFlightRequest;
+import phong_airline.demo.dtos.FlightDTO;
+import phong_airline.demo.dtos.Response;
+import phong_airline.demo.enums.City;
+import phong_airline.demo.enums.Country;
+import phong_airline.demo.enums.FlightStatus;
+import phong_airline.demo.services.FlightService;
+
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
